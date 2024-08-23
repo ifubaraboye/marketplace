@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'custom': "url(img/left.png)", // Replace with your image URL
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="bg-custom bg-no-repeat h-screen flex">
+        <div class="text-center px-[300px] py-[300px] justify-start">
+            <p class="text-white text-[30px] font-bold py-3">Hello!</p>
+            <p class="text-[14px]  text-white font-medium">Already have an account?</p>
+            <a href="signup.html" class="w-[220px] h-[58px] bg-[#0659FD] font-semibold text-white rounded-lg my-7 pt-4 block">Login</a>
+        </div>
+        <div class="border-2 rounded-l-xl bg-white border-none">
+        <div class=" justify-end px-32">
+            <img src="/img/Logo.png" alt="" class="pt-20">
+            <h2 class="pt-10 text-[22px] text-[#1E1F20] font-semibold">Welcome Back!</h2>
+            <p class="pt-1 text-[14px] text-[#8F92A1] font-normal">Sign in to continue</p>
+            
+            <form action="" class="">
+                <p class="mt-10 font-bold text-[12px]">Name</p>
+                <input type="email" name="" id="" placeholder="Anne Carry" class="p-3 w-[350px] shadow-md">
+                <p class="mt-10 font-bold text-[12px]">Tech Field</p>
+                <input type="password" name="" id="" placeholder="Digital Marketing" class="block p-3 w-[350px] shadow-md">
+                <button type="reset" class="mt-8 block bg-[#0659FD] w-[350px] text-white font-semibold h-[58px] rounded-xl">Login</button>
+            </form>
+
+            <div class="text-center text-[14px] text-[#8F92A1] py-6"><a href="">Or connect with socials</a></div>
+
+            <div>
+                <button><img src="./img/comp.png" alt=""></button>
+            </div>
+
+            <div class="mt-4">
+                <button><img src="./img/complinked.png" alt=""></button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>
