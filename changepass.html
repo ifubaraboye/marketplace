@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'custom': "url(img/left.png)", // Replace with your image URL
+            }
+          }
+        }
+      } 
+    </script>
+</head>
+<body>
+    <div class="bg-custom bg-no-repeat h-screen flex">
+        <div class="text-center px-[300px] py-[300px] justify-start">
+            <p class="px-24"></p> <!--stops the right end from overlapping the left end of the website-->
+        </div>
+
+        <div class="border-2 rounded-l-xl bg-white border-none"> 
+        <div class=" justify-end px-32 border-3">
+            <img src="/img/Logo.png" alt="" class="pt-20">
+        
+            <div class="pt-8 text-center">
+                <h2 class="px-16 text-[22px] font-semibold">Create New Password</h2>
+                <p class=" pt-2 text-[14px] text-[#8F92A1]">Create a strong and simple password</p>
+            </div>
+
+            <form action="">
+                <p class="text-[12px] font-bold mx-8 py-2 mt-10">New Password</p>
+                <input type="password" name="" id="" placeholder="New Password" class="w-[350px] p-3  ml-8 shadow-md">
+                <p class="text-[12px] font-bold mx-8 py-2 mt-8">Confirmed New Password</p>
+                <input type="password" name="" id="" placeholder="Confirm New Pasword" class="w-[350px] p-3 mt- ml-8 shadow-md">
+            </form>
+
+            <button type="reset" class="mt-8 block bg-[#0659FD] w-[350px] text-white font-semibold h-[58px] rounded-xl mx-8 ."><a href="successpassreset.html">Send Email</a></button>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>
